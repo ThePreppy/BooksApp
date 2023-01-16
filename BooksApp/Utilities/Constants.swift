@@ -7,6 +7,12 @@
 
 enum Constants {
     
+    enum Application {
+        
+        static let name: String = "BooksApp"
+        
+    }
+    
     enum SceneDelegate {
         
         static let name: String = "Default Configuration"
