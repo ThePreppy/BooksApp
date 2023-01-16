@@ -24,7 +24,8 @@ class NavigationService: NavigationServiceProtocol {
     }
     
     func showMain() {
-        let booksNavigationController = BANavigationController(rootViewController: UIViewController())
+        let viewController = BooksListBuilder.build()
+        let booksNavigationController = BANavigationController(rootViewController: viewController)
         NavigationControllerDecorator.decorate(booksNavigationController)
         
         setRoot(viewController: booksNavigationController)

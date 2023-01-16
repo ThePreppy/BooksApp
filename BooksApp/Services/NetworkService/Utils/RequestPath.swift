@@ -8,12 +8,12 @@
 import Foundation
 
 enum RequestPath {
-    case imageList
+    case searchBooks
     
     var rawValue: String {
         switch self {
-        case .imageList:
-            return "/list"
+        case .searchBooks:
+            return "/search.json"
         }
     }
     
