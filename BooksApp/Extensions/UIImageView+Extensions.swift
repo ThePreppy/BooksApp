@@ -10,7 +10,12 @@ import Kingfisher
 
 extension UIImageView {
     
-    func setImage(url: URL?, shouldDownsample: Bool = true) {
+    /// Load, cache and display image for given `url`.
+    ///
+    /// - Parameters:
+    ///     - url: if the URL is nil - placeholder will be placed.
+    ///
+    func setImage(url: URL?) {
         guard let url else {
             image = R.image.no_imagePlaceholderIc()
             return

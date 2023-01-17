@@ -9,7 +9,10 @@ import UIKit
 
 enum BooksListBuilder {
     
-    static func build() -> UIViewController {
+    /// BooksList builder function.
+    ///
+    /// - Returns: BooksListViewController.
+    static func build() -> BooksListViewController {
         let networkService = NetworkService()
         let repository = BooksRepository(networkService: networkService)
         let router = BooksListRouter()
