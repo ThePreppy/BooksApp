@@ -22,7 +22,6 @@
 		1F66ED142975F01500D058B5 /* Domainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECF72975F01500D058B5 /* Domainable.swift */; };
 		1F66ED152975F01500D058B5 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECF82975F01500D058B5 /* Container.swift */; };
 		1F66ED162975F01500D058B5 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECF92975F01500D058B5 /* AppTheme.swift */; };
-		1F66ED172975F01500D058B5 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECFA2975F01500D058B5 /* Observable.swift */; };
 		1F66ED182975F01500D058B5 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECFB2975F01500D058B5 /* Loadable.swift */; };
 		1F66ED192975F01500D058B5 /* BAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECFD2975F01500D058B5 /* BAView.swift */; };
 		1F66ED1A2975F01500D058B5 /* BACollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ECFF2975F01500D058B5 /* BACollectionItem.swift */; };
@@ -34,7 +33,6 @@
 		1F66ED202975F01500D058B5 /* BACollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ED052975F01500D058B5 /* BACollectionItemCell.swift */; };
 		1F66ED212975F01500D058B5 /* BACollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ED062975F01500D058B5 /* BACollectionViewAdapter.swift */; };
 		1F66ED222975F01500D058B5 /* BACollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ED072975F01500D058B5 /* BACollectionSection.swift */; };
-		1F66ED232975F01500D058B5 /* BAControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ED082975F01500D058B5 /* BAControl.swift */; };
 		1F66ED242975F01500D058B5 /* BAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ED092975F01500D058B5 /* BAViewController.swift */; };
 		1F66ED262975F01500D058B5 /* BANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66ED0B2975F01500D058B5 /* BANavigationController.swift */; };
 		1F66ED2A2975F04300D058B5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1F66ED292975F04300D058B5 /* SnapKit */; };
@@ -76,6 +74,13 @@
 		1F66EDB12976089800D058B5 /* BooksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDAF2976089800D058B5 /* BooksRepository.swift */; };
 		1F66EDB3297608B900D058B5 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDB2297608B900D058B5 /* BookModel.swift */; };
 		1F66EDB62976090B00D058B5 /* BookCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDB52976090B00D058B5 /* BookCollectionCell.swift */; };
+		1F66EDBE2976161500D058B5 /* SearchBooksEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDBD2976161500D058B5 /* SearchBooksEndpoint.swift */; };
+		1F66EDC1297616BB00D058B5 /* BooksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDC0297616BB00D058B5 /* BooksResponse.swift */; };
+		1F66EDC42976187500D058B5 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDC32976187500D058B5 /* BookResponse.swift */; };
+		1F66EDC729761B4200D058B5 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDC629761B4200D058B5 /* BooksModel.swift */; };
+		1F66EDCA297628C400D058B5 /* SearchBooksNavigationDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDC9297628C400D058B5 /* SearchBooksNavigationDecorator.swift */; };
+		1F66EDCD29762AB400D058B5 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDCC29762AB400D058B5 /* DispatchQueue+Extensions.swift */; };
+		1F66EDD129762DCA00D058B5 /* SearchBooksError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66EDD029762DCA00D058B5 /* SearchBooksError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,7 +101,6 @@
 		1F66ECF72975F01500D058B5 /* Domainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domainable.swift; sourceTree = "<group>"; };
 		1F66ECF82975F01500D058B5 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		1F66ECF92975F01500D058B5 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
-		1F66ECFA2975F01500D058B5 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		1F66ECFB2975F01500D058B5 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		1F66ECFD2975F01500D058B5 /* BAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAView.swift; sourceTree = "<group>"; };
 		1F66ECFF2975F01500D058B5 /* BACollectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACollectionItem.swift; sourceTree = "<group>"; };
@@ -108,7 +112,6 @@
 		1F66ED052975F01500D058B5 /* BACollectionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACollectionItemCell.swift; sourceTree = "<group>"; };
 		1F66ED062975F01500D058B5 /* BACollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACollectionViewAdapter.swift; sourceTree = "<group>"; };
 		1F66ED072975F01500D058B5 /* BACollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACollectionSection.swift; sourceTree = "<group>"; };
-		1F66ED082975F01500D058B5 /* BAControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAControl.swift; sourceTree = "<group>"; };
 		1F66ED092975F01500D058B5 /* BAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAViewController.swift; sourceTree = "<group>"; };
 		1F66ED0B2975F01500D058B5 /* BANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BANavigationController.swift; sourceTree = "<group>"; };
 		1F66ED352975F10D00D058B5 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
@@ -147,6 +150,13 @@
 		1F66EDAF2976089800D058B5 /* BooksRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksRepository.swift; sourceTree = "<group>"; };
 		1F66EDB2297608B900D058B5 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		1F66EDB52976090B00D058B5 /* BookCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionCell.swift; sourceTree = "<group>"; };
+		1F66EDBD2976161500D058B5 /* SearchBooksEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksEndpoint.swift; sourceTree = "<group>"; };
+		1F66EDC0297616BB00D058B5 /* BooksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksResponse.swift; sourceTree = "<group>"; };
+		1F66EDC32976187500D058B5 /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
+		1F66EDC629761B4200D058B5 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		1F66EDC9297628C400D058B5 /* SearchBooksNavigationDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksNavigationDecorator.swift; sourceTree = "<group>"; };
+		1F66EDCC29762AB400D058B5 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		1F66EDD029762DCA00D058B5 /* SearchBooksError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +246,6 @@
 				1F66ECF72975F01500D058B5 /* Domainable.swift */,
 				1F66ECF82975F01500D058B5 /* Container.swift */,
 				1F66ECF92975F01500D058B5 /* AppTheme.swift */,
-				1F66ECFA2975F01500D058B5 /* Observable.swift */,
 				1F66ECFB2975F01500D058B5 /* Loadable.swift */,
 			);
 			path = Utilities;
@@ -246,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				1F66ECF52975F01500D058B5 /* NavigationControllerDecorator.swift */,
+				1F66EDC9297628C400D058B5 /* SearchBooksNavigationDecorator.swift */,
 			);
 			path = Decorators;
 			sourceTree = "<group>";
@@ -256,7 +266,6 @@
 				1F66ED662975F21500D058B5 /* BAViewController */,
 				1F66ECFE2975F01500D058B5 /* BACollectionView */,
 				1F66ECFD2975F01500D058B5 /* BAView.swift */,
-				1F66ED082975F01500D058B5 /* BAControl.swift */,
 				1F66ED0B2975F01500D058B5 /* BANavigationController.swift */,
 			);
 			path = Base;
@@ -334,6 +343,7 @@
 				1F66ED582975F14B00D058B5 /* Data+Extensions.swift */,
 				1F66ED592975F14B00D058B5 /* Collection+Extensions.swift */,
 				1F66ED5A2975F14B00D058B5 /* UICollectionView+Extensions.swift */,
+				1F66EDCC29762AB400D058B5 /* DispatchQueue+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -385,6 +395,7 @@
 		1F66ED832975F45100D058B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F66EDBC2976160800D058B5 /* Endpoint */,
 				1F66ED8F2975F6B700D058B5 /* Error */,
 				1F66ED842975F45500D058B5 /* Data */,
 				1F66ED862975F45E00D058B5 /* Domain */,
@@ -403,6 +414,7 @@
 		1F66ED862975F45E00D058B5 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				1F66EDC629761B4200D058B5 /* BooksModel.swift */,
 				1F66EDB2297608B900D058B5 /* BookModel.swift */,
 			);
 			path = Domain;
@@ -412,6 +424,8 @@
 			isa = PBXGroup;
 			children = (
 				1F66ED872975F47700D058B5 /* DataResponse.swift */,
+				1F66EDC0297616BB00D058B5 /* BooksResponse.swift */,
+				1F66EDC32976187500D058B5 /* BookResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -420,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				1F66ED902975F6BE00D058B5 /* BAError.swift */,
+				1F66EDD029762DCA00D058B5 /* SearchBooksError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -467,6 +482,14 @@
 				1F66EDB52976090B00D058B5 /* BookCollectionCell.swift */,
 			);
 			path = BookCollectionCell;
+			sourceTree = "<group>";
+		};
+		1F66EDBC2976160800D058B5 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				1F66EDBD2976161500D058B5 /* SearchBooksEndpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,16 +576,19 @@
 			files = (
 				1F66ED0D2975F01500D058B5 /* Constants.swift in Sources */,
 				1F66ED652975F14B00D058B5 /* UICollectionView+Extensions.swift in Sources */,
-				1F66ED172975F01500D058B5 /* Observable.swift in Sources */,
 				1F66ED712975F2D500D058B5 /* SplashViewController.swift in Sources */,
 				1F66ED1C2975F01500D058B5 /* BACollectionView.swift in Sources */,
 				1F66ED452975F10D00D058B5 /* RequestPath.swift in Sources */,
 				1F66ED1A2975F01500D058B5 /* BACollectionItem.swift in Sources */,
 				1F66ED132975F01500D058B5 /* Logger.swift in Sources */,
+				1F66EDC1297616BB00D058B5 /* BooksResponse.swift in Sources */,
 				1F66ED1D2975F01500D058B5 /* BACollectionHeaderFooterView.swift in Sources */,
+				1F66EDBE2976161500D058B5 /* SearchBooksEndpoint.swift in Sources */,
+				1F66EDC42976187500D058B5 /* BookResponse.swift in Sources */,
 				1F66ED0E2975F01500D058B5 /* ErrorRepresentable.swift in Sources */,
 				1F66ECE42975EEE300D058B5 /* AppDelegate.swift in Sources */,
 				1F66ED122975F01500D058B5 /* NavigationControllerDecorator.swift in Sources */,
+				1F66EDCD29762AB400D058B5 /* DispatchQueue+Extensions.swift in Sources */,
 				1F66ED812975F3DA00D058B5 /* LoaderView.swift in Sources */,
 				1F66ED5C2975F14B00D058B5 /* UIView+Extensions.swift in Sources */,
 				1F66ED4C2975F10D00D058B5 /* NetworkService.swift in Sources */,
@@ -581,16 +607,18 @@
 				1F66ED212975F01500D058B5 /* BACollectionViewAdapter.swift in Sources */,
 				1F66ED4B2975F10D00D058B5 /* Endpoint.swift in Sources */,
 				1F66EDB02976089800D058B5 /* BooksRepositoryProtocol.swift in Sources */,
+				1F66EDD129762DCA00D058B5 /* SearchBooksError.swift in Sources */,
 				1F66EDA8297607A600D058B5 /* BooksListViewController.swift in Sources */,
 				1F66ED1B2975F01500D058B5 /* BACollectionHeaderFooterItem.swift in Sources */,
+				1F66EDC729761B4200D058B5 /* BooksModel.swift in Sources */,
 				1F66EDB3297608B900D058B5 /* BookModel.swift in Sources */,
 				1F66ED482975F10D00D058B5 /* EndpointMethod.swift in Sources */,
+				1F66EDCA297628C400D058B5 /* SearchBooksNavigationDecorator.swift in Sources */,
 				1F66ED1F2975F01500D058B5 /* BACollectionViewCell.swift in Sources */,
 				1F66EDA4297607A600D058B5 /* BooksListBuilder.swift in Sources */,
 				1F66ED4D2975F10D00D058B5 /* NavigationServiceProtocol.swift in Sources */,
 				1F66ED632975F14B00D058B5 /* Data+Extensions.swift in Sources */,
 				1F66ED492975F10D00D058B5 /* RequestParameters.swift in Sources */,
-				1F66ED232975F01500D058B5 /* BAControl.swift in Sources */,
 				1F66ED642975F14B00D058B5 /* Collection+Extensions.swift in Sources */,
 				1F66ED612975F14B00D058B5 /* TimeInterval+Extensions.swift in Sources */,
 				1F66EDB62976090B00D058B5 /* BookCollectionCell.swift in Sources */,

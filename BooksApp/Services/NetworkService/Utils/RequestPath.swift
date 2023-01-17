@@ -9,11 +9,14 @@ import Foundation
 
 enum RequestPath {
     case searchBooks
+    case cover(id: Int)
     
     var rawValue: String {
         switch self {
         case .searchBooks:
             return "/search.json"
+        case .cover(let id):
+            return "/b/id/\(id)"
         }
     }
     

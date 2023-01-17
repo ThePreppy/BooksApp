@@ -1,5 +1,5 @@
 //
-//  BookModel.swift
+//  BooksModel.swift
 //  BooksApp
 //
 //  Created by Alexander on 16.01.2023.
@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct BookModel {
-    let title: String?
-    let cover: URL?
+struct BooksModel {
+    let results: [BookModel]
 }
