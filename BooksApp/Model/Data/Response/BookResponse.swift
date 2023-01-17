@@ -10,10 +10,12 @@ import Foundation
 struct BookResponse: ResponseDomainable {
     typealias Model = BookModel
     
+    let key: String
     let title: String?
     let coverID: Int?
     
     enum CodingKeys: String, CodingKey {
+        case key
         case title
         case coverID = "cover_i"
     }
@@ -31,6 +33,7 @@ struct BookResponse: ResponseDomainable {
         }
         
         return BookModel(
+            id: key,
             title: title,
             cover: coverURL
         )

@@ -10,6 +10,8 @@ import Kingfisher
 
 class BooksListViewController: BAViewController {
     
+    //MARK: - Properties
+    
     private lazy var collectionView: BACollectionView = {
         let result = BACollectionView()
         result.setCollectionViewLayout(createLayout(), animated: false)
@@ -23,10 +25,14 @@ class BooksListViewController: BAViewController {
     
     let viewModel: BooksListViewModelInput
     
+    //MARK: - Lifecycle
+    
     init(viewModel: BooksListViewModelInput) {
         self.viewModel = viewModel
         super.init()
     }
+    
+    //MARK: - Public Functions
     
     override func setupComponents() {
         super.setupComponents()
@@ -34,6 +40,8 @@ class BooksListViewController: BAViewController {
         setupUI()
         setupListeners()
     }
+    
+    //MARK: - Private Functions
     
     private func setupUI() {
         setupNavigationBar()
@@ -86,6 +94,9 @@ class BooksListViewController: BAViewController {
     
 }
 
+//MARK: - Extensions
+
+//MARK: UISearchBarDelegate
 extension BooksListViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -98,6 +109,7 @@ extension BooksListViewController: UISearchBarDelegate {
     
 }
 
+//MARK: Constants
 extension BooksListViewController {
     
     private enum Constants {

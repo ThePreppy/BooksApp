@@ -24,6 +24,7 @@ enum Constants {
         enum Fields: String {
             case coverID = "cover_i"
             case title = "title"
+            case key
         }
         
         static let scheme: String = "https://"
@@ -34,7 +35,7 @@ enum Constants {
         static let jpg: String = ".jpg"
         
         static var fields: String {
-            let result: [Fields] = [.coverID, .title]
+            let result: [Fields] = [.coverID, .title, .key]
             return result.map(\.rawValue).joined(separator: ",")
         }
         
