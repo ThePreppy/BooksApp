@@ -33,16 +33,19 @@ class BooksListViewController: BAViewController {
         
         setupUI()
         setupListeners()
-        
-        viewModel.fetchBooks()
     }
     
     private func setupUI() {
-        navigationItem.title = R.string.localizable.books_listNavigationTitle()
+        setupNavigationBar()
         
         collectionView.addToSuperview(view) {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func setupNavigationBar() {
+        SearchBooksNavigationDecorator.decorate(navigationItem, delegate: self)
+        definesPresentationContext = true
     }
     
     private func setupListeners() {
@@ -52,10 +55,15 @@ class BooksListViewController: BAViewController {
     }
     
     private func createLayout() -> UICollectionViewCompositionalLayout {
-        let itemDimension = NSCollectionLayoutDimension.fractionalWidth(1 / CGFloat(Constants.numberOfItemsInRow))
+        let width = 1 / CGFloat(Constants.numberOfItemsInRow)
+        let heightMultiplier: CGFloat = 1.5
+        
+        let widthDimension = NSCollectionLayoutDimension.fractionalWidth(width)
+        let heightDimension = NSCollectionLayoutDimension.fractionalWidth(width * heightMultiplier)
+        
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: itemDimension,
-            heightDimension: itemDimension
+            widthDimension: widthDimension,
+            heightDimension: heightDimension
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
@@ -74,6 +82,18 @@ class BooksListViewController: BAViewController {
         let layout = UICollectionViewCompositionalLayout(section: section)
         
         return layout
+    }
+    
+}
+
+extension BooksListViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.fetchBooks(query: searchText)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.fetchBooks(query: "")
     }
     
 }

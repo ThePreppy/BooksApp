@@ -32,8 +32,8 @@ protocol Endpoint: URLRequestConvertible, URLConvertible {
 }
 
 extension Endpoint {
-    var scheme: String { "https://" }
-    var domain: String { "picsum.photos/v2" }
+    var scheme: String { Constants.Books.scheme }
+    var domain: String { Constants.Books.baseURL }
     var method: HTTPMethod { .get }
     var headers: [RequestHeader] { .default }
     var body: RequestParameters? { nil }

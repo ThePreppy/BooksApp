@@ -10,24 +10,32 @@ import UIKit
 class BookCollectionCell: BACollectionItemCell<BookCollectionCell.Model> {
     
     class Model: BACollectionItem {
+        let title: String?
         let url: URL?
-        var isFavourite: Bool
-        var didFavourite: Closure?
         
         override var reuseID: String? {
             BookCollectionCell.reuseID
         }
         
-        init(url: URL?, isFavourite: Bool, didFavorite: Closure?) {
+        init(title: String?, url: URL?) {
+            self.title = title
             self.url = url
-            self.isFavourite = isFavourite
-            self.didFavourite = didFavorite
         }
     }
     
     private lazy var imageView: UIImageView = {
         let result = UIImageView()
-        result.tintColor = AppTheme.black
+        result.tintColor = AppTheme.systemBlack
+        result.contentMode = .scaleAspectFit
+        
+        return result
+    }()
+    
+    private lazy var titleLabel: UILabel = {
+        let result = UILabel()
+        result.textColor = AppTheme.systemBlack
+        result.textAlignment = .center
+        result.numberOfLines = 0
         
         return result
     }()
@@ -39,8 +47,17 @@ class BookCollectionCell: BACollectionItemCell<BookCollectionCell.Model> {
     override func setupComponents() {
         super.setupComponents()
         
-        imageView.addToSuperview(contentView) {
+        let stackView = UIStackView.vertical(
+            spacing: 10,
+            arrangedSubviews: [imageView, titleLabel]
+        )
+        
+        stackView.addToSuperview(contentView) {
             $0.edges.equalToSuperview()
+        }
+        
+        imageView.snp.makeConstraints {
+            $0.height.equalToSuperview().multipliedBy(0.7)
         }
         
     }
@@ -49,6 +66,7 @@ class BookCollectionCell: BACollectionItemCell<BookCollectionCell.Model> {
         super.updateComponents()
      
         imageView.setImage(url: viewModel?.url)
+        titleLabel.text = viewModel?.title
     }
     
     private func animate() {

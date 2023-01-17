@@ -7,3 +7,5 @@
 
 //MARK: - Books List
 "books_list.navigation.title" = "Books";
+"books_list.search_books" = "Search books";
+"books_list.nothing_found.error" = "Nothing found";
